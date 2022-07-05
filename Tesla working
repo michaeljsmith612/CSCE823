@@ -1,0 +1,29 @@
+cd work/
+git clone https://github.com/michaeljsmith612/CSCE823.git
+ls
+cd CSCE823/
+ls
+conda create --name csce823 python=3.8
+conda activate csce823
+conda install tensorflow-gpu
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+conda install -c anaconda ipykernel
+ipython kernel install --user --name=envname
+ipython kernel install --user --name=csce823
+conda install matplotlib
+conda install numpy
+conda install pandas
+conda install sklearn
+nvidia-smi
+glxinfo
+sudo lshw -C display
+nvidia-smi -q
+jupyter kernelspec uninstall envname
+conda install sklearn
+pip install sklearn
+TF_GPU_ALLOCATOR=cuda_malloc_async
+nvidida-smi
+nvidia-smi
+watch -n 0.5 nvidia-smi
+cat history
+history -w hist.txt
