@@ -22,6 +22,7 @@ jupyter kernelspec uninstall envname
 conda install sklearn
 pip install sklearn
 TF_GPU_ALLOCATOR=cuda_malloc_async
+ln -s /opt/conda/envs/csce823/pkgs/cuda-toolkit /usr/local/cuda
 nvidida-smi
 nvidia-smi
 watch -n 0.5 nvidia-smi
